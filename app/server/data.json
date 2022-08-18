@@ -1,0 +1,37 @@
+[
+    {
+        "admin": 0,
+        "login": "444",
+        "email": "444",
+        "name": "444",
+        "pasword": "$2y$10$RXKdkvmNEQHGAVxETAJmrugMZQMtcwnWAyhcztLzGwlS2Q\/1upQeW"
+    },
+    {
+        "admin": 0,
+        "login": "",
+        "email": "",
+        "name": "",
+        "password": "$2y$10$60DGpkEvJDY\/U52DTiOygeEYT2ZlAgtEKiNBIPrXVTQ.XFmnVFnfe"
+    },
+    {
+        "admin": 0,
+        "login": "1234",
+        "email": "1234",
+        "name": "1234",
+        "password": "$2y$10$oM40HlVSqG7gRq\/FGrJoMelg6tpql3wQtvSgZTCvIak.TXmQxUnvu"
+    },
+    {
+        "admin": 0,
+        "login": "666666666666",
+        "email": "66666666666",
+        "name": "66666666",
+        "password": "$2y$10$M6puLIb8WU\/9OQTTxuuVbecl4RbS\/y\/oNSF8\/moFhoPa3vENkDHEi"
+    },
+    {
+        "admin": 0,
+        "login": "test",
+        "email": "test",
+        "name": "test",
+        "password": "$2y$10$ohvmbCBRHEvdF\/CYfOJQ5e46IZx1grhJvDg0\/2qwBAcObQnUZgYAC"
+    }
+]
