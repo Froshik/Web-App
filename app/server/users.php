@@ -12,11 +12,9 @@ if($in > null){
 	$params[$key] = $pass;
 	$in = $params;
 	writeAndSendUserData($in);
+	
 }
-
-
 passChange($in);
-
 }
 
 

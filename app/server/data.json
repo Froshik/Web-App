@@ -33,5 +33,40 @@
         "email": "test",
         "name": "test",
         "password": "$2y$10$ohvmbCBRHEvdF\/CYfOJQ5e46IZx1grhJvDg0\/2qwBAcObQnUZgYAC"
+    },
+    {
+        "admin": 0,
+        "login": "3333",
+        "email": "test333",
+        "name": "3333",
+        "password": "$2y$10$S7bV2Sv1RglxHo8OBFBYiurnAS79ntOEs\/mWTnUpYkrWFmzwI4gfm"
+    },
+    {
+        "admin": 0,
+        "login": "123456",
+        "email": "fgh@mail.ru",
+        "name": "666666",
+        "password": "$2y$10$yi6gWlv\/7bBrCjVu4HpGBu7bcQ1pC42yTiRbUa3flJ8Rdc\/G78DYK"
+    },
+    {
+        "admin": 0,
+        "login": "123456",
+        "email": "fgh@mail.ru",
+        "name": "666666",
+        "password": "$2y$10$.gaqx7psbvbcrcGS7kwkdOmh3tkS2k6fLheRw\/T3KAyMKceKKRUqi"
+    },
+    {
+        "admin": 0,
+        "login": "123456",
+        "email": "fgh@mail.rus",
+        "name": "666666",
+        "password": "$2y$10$grWvMBe7D6Kgx1ZCs8mJlOqsqLQBeuFSkWAfa2WOdM8e0kJPBPiWu"
+    },
+    {
+        "admin": 0,
+        "login": "12345613",
+        "email": "fgh@mail.com",
+        "name": "666666123",
+        "password": "$2y$10$BXh5MNcmpA\/LROkfux8TCe.QCIjzRa06CMeFhkUeOyDuENWL3hc.m"
     }
 ]
