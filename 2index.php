@@ -37,16 +37,16 @@
 			<button type="submit" class="btn btn-primary" name="button-reg" id="button_registration">Регистрация</button>
 		</form>
 	</div>
-	<div class="col" id="block2">
-		<form action="http://localhost/tech-zadanie/page.php" method="">
+		<div class="col">
+		<form name = "authForm" class = "authForm">
 			<h1> Авторизация</h1>
 			<div class="mb-3">
-			<label for="exampleInputEmail1" class="form-label">Email</label>
-			<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+			<label  class="form-label">Login</label>
+			<input type="email" class="form-control" id="authLogin" aria-describedby="emailHelp">
 		</div>
 			<div class="mb-3">
-			<label for="exampleInputPassword1" class="form-label">Password</label>
-			<input type="password" class="form-control" id="321321">
+			<label class="form-label" id = "authPassword">Password</label>
+			<input type="password" class="form-control" id="authPassword">
 		</div>
 			<button type="submit" class="btn btn-primary" id="button_login">Войти</button>
 		</form>

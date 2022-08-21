@@ -2,6 +2,10 @@ window.addEventListener("DOMContentLoaded", () => {
 let button_registration = document.getElementById("button_registration");
 button_registration.addEventListener("click",(event) => proceedRegistration(event), false);
 });
+window.addEventListener("DOMContentLoaded", () => {
+let button_login = document.getElementById("button_login");
+button_login.addEventListener("click",(event) => authorization(event), false);
+});
 
  function proceedRegistration(event) {
  event.preventDefault();
@@ -73,4 +77,11 @@ document.getElementById("emailLabel").innerHTML = "Такой Email уже за�
 findUserInJsonDb(email);
   
 }
+}
+ 
+
+ function authorization(event) {
+ event.preventDefault();
+
+
 }
