@@ -1,7 +1,7 @@
 <?php 
 $driver = 'mysql';
 $host = 'localhost';
-$db_name = 'client-bd';
+$db_name = 'client-db';
 $db_user = 'root';
 $db_pass = '';
 $charset = 'utf8';

@@ -45,7 +45,7 @@
 			<input type="email" class="form-control" id="authLogin" aria-describedby="emailHelp">
 		</div>
 			<div class="mb-3">
-			<label class="form-label" id = "authPassword">Password</label>
+			<label class="form-label">Password</label>
 			<input type="password" class="form-control" id="authPassword">
 		</div>
 			<button type="submit" class="btn btn-primary" id="button_login">Войти</button>

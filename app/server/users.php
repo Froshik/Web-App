@@ -1,5 +1,5 @@
 <?php
-require('D:/Server/htdocs/tech-zadanie/connect.php');
+require('C:/xampp/htdocs/tech-zadanie/connect.php');
 include ('db.php');
 $in = json_decode(file_get_contents('php://input'),true);
 $out[] = json_encode($in);

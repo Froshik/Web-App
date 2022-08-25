@@ -1,5 +1,5 @@
 <?php
-require('D:/Server/htdocs/tech-zadanie/connect.php');
+require('C:/xampp/htdocs/tech-zadanie/connect.php');
 //Удобное отображение полуученных данных из массива
 function tt($value){
 	echo '<pre>';
