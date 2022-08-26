@@ -48,7 +48,8 @@
 			<label class="form-label">Password</label>
 			<input type="password" class="form-control" id="authPassword">
 		</div>
-			<button type="submit" class="btn btn-primary" id="button_login">Войти</button>
+		<!-- onclick="window.location='page.html'" -->
+			<button type="submit" class="btn btn-primary" id="button_login" >Войти</button>
 		</form>
 	</div>
 	</div> 

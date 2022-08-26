@@ -68,9 +68,13 @@ document.getElementById("logLabel").innerHTML = "Такой Login уже зар�
       var post = fetch(url, {
         method: 'POST',
         body: JSON.stringify(udata),
-    }).then(response => response.json())
-    .then((data) =>  console.log(data))
-  };
+    }).then((response) => {
+      return response.json();
+    })
+    .then((data) => {
+      console.log(data);
+      });
+  }
 }
 findUserInJsonDb(email,login);
 }
@@ -82,11 +86,25 @@ const password = document.getElementById("authPassword").value.trim();
 const response = await fetch('app/server/data.json');
 const jsonDB = await response.json();
 const findLogin = jsonDB.find(jsonDB => jsonDB.login === login);
+console.log(findLogin);
 if(findLogin !=null){
   var post = fetch('app/server/auth.php', {
         method: 'POST',
         body: JSON.stringify(password),
-    }).then(response => response.json())
-    .then((data) =>  console.log(data))
+    }).then((response) => {
+      return response.json();
+    })
+    .then((data) => {
+     console.log(data)
+      });
+    // document.location.assign('page.php')
+} console.log(post);
+
 }
-}
+
+
+
+
+
+
+
