@@ -12,8 +12,9 @@ function passExtract($params){
  		foreach ($passwords as $key => $value) {
     	if (password_verify($params, $value)) {
     		$return = 1;
+    		// $_SESSION['user_login']
 		}else{
-			$return = 2;
+			$return = 0;
 		} 
 		
 	}return($return);

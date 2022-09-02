@@ -41,11 +41,11 @@
 		<form name = "authForm" class = "authForm">
 			<h1> Авторизация</h1>
 			<div class="mb-3">
-			<label  class="form-label">Login</label>
+			<label  class="form-label" id="authLoginLabel">Login</label>
 			<input type="email" class="form-control" id="authLogin" aria-describedby="emailHelp">
 		</div>
 			<div class="mb-3">
-			<label class="form-label">Password</label>
+			<label class="form-label" id="authPasswordLabel">Password</label>
 			<input type="password" class="form-control" id="authPassword">
 		</div>
 		<!-- onclick="window.location='page.html'" -->

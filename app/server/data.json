@@ -26,5 +26,12 @@
         "email": "iAmPa55Wordd@gmail.com",
         "name": "iAmPa55Wordd",
         "password": "$2y$10$ufWvDk4EXMe8nlY\/YJP7HuVP\/eLXBUj3d25am6xMmHuIEd7FGG0Ve"
+    },
+    {
+        "admin": 0,
+        "login": "testNewPass",
+        "email": "testNewPass@pass.com",
+        "name": "testNewPass",
+        "password": "$2y$10$x3YC.fZikrDkZgVojh\/nQeoFL0yjvO0u6Yzq.kOVW7EnGFtrylgeO"
     }
 ]

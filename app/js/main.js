@@ -88,18 +88,29 @@ const jsonDB = await response.json();
 const findLogin = jsonDB.find(jsonDB => jsonDB.login === login);
 console.log(findLogin);
 if(findLogin !=null){
-  var post = fetch('app/server/auth.php', {
+  let post = await fetch('app/server/auth.php', {
         method: 'POST',
         body: JSON.stringify(password),
     }).then((response) => {
       return response.json();
     })
     .then((data) => {
-     console.log(data)
-      });
-    // document.location.assign('page.php')
-} console.log(post);
+      console.log(data)
+      if(data === 1){
+     console.log(data);
+     document.getElementById("authPasswordLabel").innerHTML = "Password";
+    document.location.assign('page.php');
 
+   }else {
+    document.getElementById("authPasswordLabel").innerHTML = "Не верный пароль";
+   };
+      });
+   }else{
+    console.log("Такой пользователь не найден");
+    window.alert("Такой пользователь не найден");
+  
+  } 
+  
 }
 
 
