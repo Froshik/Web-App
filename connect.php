@@ -18,7 +18,7 @@ try{
         $_COOKIE['page_visit'] = 1;
     }
 
-    // session_start();
+    session_start();
 
 }catch (PDOException $i){
     die("Ошибка подключения к базе данных");

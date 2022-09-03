@@ -14,6 +14,7 @@ function userExtract($params){
  	$hash = current(array_intersect_key($authData, $userData));
  	if(password_verify($userPass, $hash)){
  		$return = 1;
+ 		$_SESSION['session_login'] = array_key_first($userData);
  	}else{
  		$return = 0;
  	}
