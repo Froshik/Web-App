@@ -52,7 +52,8 @@
 			<button type="submit" class="btn btn-primary" id="button_login" >Войти</button>
 		</form>
 	</div>
-	</div> 
-	<script src="app/js/main.js"></script>
+	</div>
+	<script src="app/js/UserInput.js"></script>
+	<script type="module" src="app/js/main.js"></script>
 
 </body></html>

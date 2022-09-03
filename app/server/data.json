@@ -1,37 +1,9 @@
 [
     {
         "admin": 0,
-        "login": "12345",
-        "email": "1253",
-        "name": "1235",
-        "password": "$2y$10$kaVhxLzf5V8hL.gjf4hkde03Jd68XkzremuqIMK22vWc64tRyuGFO"
-    },
-    {
-        "admin": 0,
-        "login": "test1",
-        "email": "test2",
-        "name": "",
-        "password": "$2y$10$Y5t\/\/mHlz.\/inDHcKPxSFeuRwG64gY7Jg9y\/g6KqKNAnZndXG7IU6"
-    },
-    {
-        "admin": 0,
-        "login": "testPass",
-        "email": "iAmPa55Wordd@gmail.com",
-        "name": "iAmPa55Wordd",
-        "password": "$2y$10$ufWvDk4EXMe8nlY\/YJP7HuVP\/eLXBUj3d25am6xMmHuIEd7FGG0Ve"
-    },
-    {
-        "admin": 0,
-        "login": "testNewPass",
-        "email": "testNewPass@pass.com",
-        "name": "testNewPass",
-        "password": "$2y$10$x3YC.fZikrDkZgVojh\/nQeoFL0yjvO0u6Yzq.kOVW7EnGFtrylgeO"
-    },
-    {
-        "admin": 0,
-        "login": "correct321",
-        "email": "correct321@gmail.434",
-        "name": "correct321",
-        "password": "$2y$10$P3XUP1qSuzquvP3.uBJIauYP2MreFTq10J00AyszVYTRUrM3mrSRC"
+        "login": "FinalTest",
+        "email": "FinalTest@mail.com",
+        "name": "FinalTest",
+        "password": "$2y$10$W4ixkQGoGC8zZWkUm709FO4r\/5e1zXo4eKWo7jXW1EHBahjRT6r8a"
     }
 ]

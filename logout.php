@@ -1,4 +1,5 @@
 <?php
+// Уничтожение куки и сессии
 require_once 'connect.php';
 
 $_SESSION = [];

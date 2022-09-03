@@ -1,13 +1,13 @@
 <?php
 require('C:/xampp/htdocs/tech-zadanie/connect.php');
-//Удобное отображение полуученных данных из массива
+//Удобное отображение полуученных данных из массива Отладочная функция
 function tt($value){
 	echo '<pre>';
 	print_r($value);
 	echo '</pre>';
 }
 
-//Проверка выполнения запроса к БД
+//Проверка выполнения запроса к БД MySql
 function dbCheckError($query){
 	$errInfo = $query->errorInfo();
 
@@ -18,7 +18,7 @@ function dbCheckError($query){
 	return true;
 }
 
-//Запрос на получение данных c одной таблицы
+//Запрос на получение данных c одной таблицы MySql
 function selectALL($table, $params = []){
 	global $pdo;
 	$sql = "SELECT * FROM $table";
@@ -43,7 +43,7 @@ function selectALL($table, $params = []){
 	return $query->fetchALL();
 }
 
-//Запрос на получение данных с одной строки  данных c одной таблицы
+//Запрос на получение данных с одной строки  данных c одной таблицы MySql
 function selectOne($table, $params = []){
 	global $pdo;
 	$sql = "SELECT * FROM $table";
@@ -70,7 +70,7 @@ function selectOne($table, $params = []){
 }
 
 
-//запись данных в БД
+//запись данных в БД MySql
 function insert($table, $params){
 	global $pdo;
 	$i=0;
@@ -121,11 +121,9 @@ function insert($table, $params){
     $users_data_as_json = json_encode($users_list, JSON_PRETTY_PRINT);
     file_put_contents($filename, $users_data_as_json);
     }
-
+// Функции обрабатывающие и записывающие данные в data.json и базу данных MySql
  function writeAndSendUserData($user_data){
-    	if (empty($user_data)) {
-    		return;
-    	}
     	writeUserDataJson($user_data);
+
     	sendLastUserData();
     }
