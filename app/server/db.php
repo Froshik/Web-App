@@ -126,9 +126,6 @@ function insert($table, $params){
     	if (empty($user_data)) {
     		return;
     	}
-    	
     	writeUserDataJson($user_data);
     	sendLastUserData();
-    	
-
     }

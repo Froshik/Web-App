@@ -83,21 +83,19 @@ findUserInJsonDb(email,login);
  event.preventDefault();
 const login = document.getElementById("authLogin").value.trim();
 const password = document.getElementById("authPassword").value.trim();
-const response = await fetch('app/server/data.json');
-const jsonDB = await response.json();
-const findLogin = jsonDB.find(jsonDB => jsonDB.login === login);
-console.log(findLogin);
-if(findLogin !=null){
+let arr = [{     
+  login : login,
+  password : password     
+  }];
+if(arr !=null){
   let post = await fetch('app/server/auth.php', {
         method: 'POST',
-        body: JSON.stringify(password),
+        body: JSON.stringify(arr),
     }).then((response) => {
       return response.json();
     })
     .then((data) => {
-      console.log(data)
       if(data === 1){
-     console.log(data);
      document.getElementById("authPasswordLabel").innerHTML = "Password";
     document.location.assign('page.php');
 

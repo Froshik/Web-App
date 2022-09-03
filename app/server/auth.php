@@ -1,22 +1,22 @@
 <?php
 include ('db.php');
-$pass = json_decode(file_get_contents('php://input'),true);
+$loginData = json_decode(file_get_contents('php://input'),true);
 
-if($pass > null){
- $message = passExtract($pass);
+if($loginData > null){
+ $message = userExtract($loginData);
   echo ($message);
 }
-function passExtract($params){
-	$user_data = json_decode(file_get_contents('data.json'),true);
- 	$passwords = array_column($user_data, 'password');
- 		foreach ($passwords as $key => $value) {
-    	if (password_verify($params, $value)) {
-    		$return = 1;
-    		// $_SESSION['user_login']
-		}else{
-			$return = 0;
-		} 
-		
-	}return($return);
-}
+function userExtract($params){
+	$db = json_decode(file_get_contents('data.json'),true);
+	$authData = array_column($db, 'password', 'login');
+	$userData = (array_column($params, 'password', 'login'));
+	$userPass = current($userData);
+ 	$hash = current(array_intersect_key($authData, $userData));
+ 	if(password_verify($userPass, $hash)){
+ 		$return = 1;
+ 	}else{
+ 		$return = 0;
+ 	}
+ 	return($return);
+	}
 ?>
