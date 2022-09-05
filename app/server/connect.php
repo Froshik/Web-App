@@ -1,3 +1,4 @@
+//Проверить данные для подключение к MySQL
 <?php //Данные для входа в базу данных MySql
 $driver = 'mysql';
 $host = 'localhost';
