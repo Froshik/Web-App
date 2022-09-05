@@ -1,6 +1,6 @@
 <?php 
 //Страница авторизированного пользоватиля с счетчиком посещения страницы куки и выходом
-require_once 'connect.php';
+require_once 'app/server/connect.php';
 if (isset($_SESSION['session_login'])){
 	echo 'Добро пожаловать ' . $_SESSION['session_login'] . ' вы успешно авторизировались';
 	echo '<br>';

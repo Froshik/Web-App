@@ -1,5 +1,5 @@
 <?php
-require('C:/xampp/htdocs/tech-zadanie/connect.php');
+require_once ('connect.php');
 include ('db.php');
 // Прием данных из формы регистрации
 $in = json_decode(file_get_contents('php://input'),true);

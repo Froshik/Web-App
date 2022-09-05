@@ -1,5 +1,5 @@
 <?php
-require('C:/xampp/htdocs/tech-zadanie/connect.php');
+require_once ('connect.php');
 //Удобное отображение полуученных данных из массива Отладочная функция
 function tt($value){
 	echo '<pre>';
@@ -93,23 +93,24 @@ function insert($table, $params){
 	$query->execute();
 	dbCheckError($query);
 }
+// Запись пользователя в базу данных MySQL
+ // function sendLastUserData(){
+ // 	global $pdo;
+ //    $filename = "data.json";
+ //    $users_data = file_get_contents($filename); 
+ //    $users_list = json_decode($users_data, true);
+ //    $last_user = end($users_list);
+ //    $post = [
+	// 		'admin' => $last_user['admin'],
+	// 		'login' => $last_user['login'],
+	// 		'email' => $last_user['email'],
+	// 		'name' => $last_user['name'],
+	// 		'password' => $last_user['password']
+	// 	];
+	// 	insert('users', $post);
+ //    }
 
- function sendLastUserData(){
- 	global $pdo;
-    $filename = "data.json";
-    $users_data = file_get_contents($filename); 
-    $users_list = json_decode($users_data, true);
-    $last_user = end($users_list);
-    $post = [
-			'admin' => $last_user['admin'],
-			'login' => $last_user['login'],
-			'email' => $last_user['email'],
-			'name' => $last_user['name'],
-			'password' => $last_user['password']
-		];
-		insert('users', $post);
-    }
-
+// Запись пользователя в data.json
  function writeUserDataJson($user_data){
     	if (empty($user_data)) {
     		return;
@@ -124,6 +125,4 @@ function insert($table, $params){
 // Функции обрабатывающие и записывающие данные в data.json и базу данных MySql
  function writeAndSendUserData($user_data){
     	writeUserDataJson($user_data);
-
-    	sendLastUserData();
     }

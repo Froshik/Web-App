@@ -1,6 +1,6 @@
 <?php
 // Уничтожение куки и сессии
-require_once 'connect.php';
+require_once 'app/server/connect.php';
 
 $_SESSION = [];
 

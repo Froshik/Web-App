@@ -27,8 +27,10 @@
         })
         .then((data) => {
           if(data === 1){
-    document.location.assign('page.php');
-  };
-      }
+          document.location.assign('2index.php');
+         window.alert("Регистрация прошла успешно");
+        } 
+      })
     }
+  }
 export default validateAndSendUserData;
