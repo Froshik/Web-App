@@ -2,14 +2,14 @@ import validateAndSendUserData from './function.js'
 
 window.addEventListener("DOMContentLoaded", () => {
 let button_registration = document.getElementById("button_registration");
-button_registration.addEventListener("click",(event) => Registration(event), false);
+button_registration.addEventListener("click",(event) => registration(event), false);
 });
 window.addEventListener("DOMContentLoaded", () => {
 let button_login = document.getElementById("button_login");
 button_login.addEventListener("click",(event) => authorization(event), false);
 });
 
-function Registration(event) {
+function registration(event) {
  event.preventDefault();
  // Запись введенных пользователем данных в переменные
   const login = document.getElementById("inputLogin").value.trim();

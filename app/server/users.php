@@ -15,7 +15,7 @@ function passChange($params){
 	$pass = password_hash($pass,PASSWORD_DEFAULT);
 	$params[$key] = $pass;
 	$in = $params;
-	writeAndSendUserData($in);
+	writeUserDataJson($in);
 	return 1;
 }
 ?>
