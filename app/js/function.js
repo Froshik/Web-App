@@ -27,7 +27,7 @@
         })
         .then((data) => {
           if(data === 1){
-          document.location.assign('2index.php');
+          document.location.assign('index.html');
          window.alert("Регистрация прошла успешно");
         } 
       })

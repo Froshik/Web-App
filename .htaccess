@@ -1,0 +1,16 @@
+order deny,allow
+allow from all
+
+<FilesMatch "\.(json)$">
+deny from all
+</FilesMatch>
+
+<If "%{THE_REQUEST} =~ m#^GET /tech-zadanie/app/server/data.json#">
+        Allow from All
+        Satisfy Any
+</If>
+
+<If "%{THE_REQUEST} =~ m#^POST /tech-zadanie/app/server/data.json#">
+        Allow from All
+        Satisfy Any
+</If>

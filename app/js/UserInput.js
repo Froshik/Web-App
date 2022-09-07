@@ -9,6 +9,10 @@ class UserInput{
     this.regexp = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
   } 
   validLogin(){
+    if(this.login.includes(' ')){
+        document.getElementById("logLabel").innerHTML = "Login не должен содержать пробел";
+        return false;
+      }
       if (this.login.length < 6){
         document.getElementById("logLabel").innerHTML = "Login должен быть больше 6 символов";
         return false;
@@ -25,6 +29,10 @@ class UserInput{
       return true;
     }
   validName(){
+     if(this.name.includes(' ')){
+        document.getElementById("nameLabel").innerHTML = "Name не должен содержать пробел";
+        return false;
+      }
     if (this.name.length < 2){
         document.getElementById("nameLabel").innerHTML = "Name должен быть больше 2 символов";
         return false;
@@ -33,6 +41,10 @@ class UserInput{
       return true;
     }
   validPassword(){
+     if(this.password1.includes(' ')){
+        document.getElementById("pass1Label").innerHTML = "Password не должен содержать пробел";
+        return false;
+      }
     if (this.password1.length < 6){
         document.getElementById("pass1Label").innerHTML = "Password должен быть больше 6 символов";
         return false;

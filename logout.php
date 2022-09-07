@@ -10,4 +10,4 @@ if (isset($_COOKIE[session_name()]) ){
 
 session_destroy();
 
-header('Location: 2index.php');
+header('Location: index.html');
