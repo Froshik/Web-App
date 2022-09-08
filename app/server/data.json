@@ -5,5 +5,12 @@
         "email": "FinalTest@mail.com",
         "name": "FinalTest",
         "password": "$2y$10$W4ixkQGoGC8zZWkUm709FO4r\/5e1zXo4eKWo7jXW1EHBahjRT6r8a"
+    },
+    {
+        "admin": 0,
+        "login": "1231231",
+        "email": "123123@gmail.com",
+        "name": "123123",
+        "password": "$2y$10$KkOTMeTRZ6bbBJf.tVZQXeq\/5vNlLa0YtrTuS4OMgMOH\/ZpS7ASTa"
     }
 ]

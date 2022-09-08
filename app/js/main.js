@@ -1,4 +1,5 @@
 import validateAndSendUserData from './function.js'
+import dataBase from '../server/data.json' assert {type: 'json'};
 
 window.addEventListener("DOMContentLoaded", () => {
 let button_registration = document.getElementById("button_registration");

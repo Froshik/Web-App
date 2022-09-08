@@ -1,8 +1,7 @@
 order deny,allow
-allow from all
 
 <FilesMatch "\.(json)$">
-deny from all
+Deny from all
 </FilesMatch>
 
 <If "%{THE_REQUEST} =~ m#^GET /tech-zadanie/app/server/data.json#">
