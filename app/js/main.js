@@ -1,5 +1,4 @@
 import validateAndSendUserData from './function.js'
-import dataBase from '../server/data.json' assert {type: 'json'};
 
 window.addEventListener("DOMContentLoaded", () => {
 let button_registration = document.getElementById("button_registration");
@@ -19,12 +18,12 @@ function registration(event) {
   const password1 = document.getElementById("inputPassword1").value.trim();
   const password2 = document.getElementById("inputPassword2").value.trim();
 // Валидация полученных данных в классe UserInput 
-  const i = new UserInput(login, email, name, password1, password2);
-  if (i.validLogin() && i.validEmail() && i.validName() && i.validPassword() && i.confirmPassword()) {
-    // Вызов функции для проверки уникальности пользователя и его записи в базу данных
+   const userData = new UserInput(login, email, name, password1, password2);
+   if (userData.validLogin() && userData.validEmail() && userData.validName() && userData.validPassword() && userData.confirmPassword()) {
+    // Вызов функции для отправки запроса на сервер.
     validateAndSendUserData(email,login,name,password1);
   }
-}
+ }
 // Функция для авторизации на сайте
 async function authorization(event) {
   event.preventDefault();
