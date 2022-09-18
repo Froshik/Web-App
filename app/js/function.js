@@ -15,7 +15,7 @@
         })
         .then((data) => {
           if(data == 1){
-           document.location.assign('index.html');
+           document.location.assign('index.php');
           window.alert("Регистрация прошла успешно");
         }else {window.alert("Этот Email или Login уже заняты");}
       })
