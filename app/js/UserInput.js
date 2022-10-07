@@ -10,11 +10,11 @@ class UserInput{
   } 
   validLogin(){
     if(this.login.includes(' ')){
-        document.getElementById("logLabel").innerHTML = "Login не должен содержать пробел";
+        document.getElementById("logLabel").innerHTML = "Login must not include spaces";
         return false;
       }
       if (this.login.length < 6){
-        document.getElementById("logLabel").innerHTML = "Login должен быть больше 6 символов";
+        document.getElementById("logLabel").innerHTML = "Your Login must be at least 6 characters";
         return false;
       }
       document.getElementById("logLabel").innerHTML = "Login";
@@ -30,11 +30,11 @@ class UserInput{
     }
   validName(){
      if(this.name.includes(' ')){
-        document.getElementById("nameLabel").innerHTML = "Name не должен содержать пробел";
+        document.getElementById("nameLabel").innerHTML = "Name must not include spaces";
         return false;
       }
     if (this.name.length < 2){
-        document.getElementById("nameLabel").innerHTML = "Name должен быть больше 2 символов";
+        document.getElementById("nameLabel").innerHTML = "Your Name must be at least 2 characters";
         return false;
       }
       document.getElementById("nameLabel").innerHTML = "Name"
@@ -42,7 +42,7 @@ class UserInput{
     }
   validPassword(){
      if(this.password1.includes(' ')){
-        document.getElementById("pass1Label").innerHTML = "Password не должен содержать пробел";
+        document.getElementById("pass1Label").innerHTML = "Password must not include spaces";
         return false;
       }
     if (this.password1.length < 6){

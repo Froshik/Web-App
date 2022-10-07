@@ -2,13 +2,13 @@
 //Страница авторизированного пользоватиля с счетчиком посещения страницы куки и выходом
 require_once 'app/server/connect.php';
 if (isset($_SESSION['session_login'])){
-	echo 'Добро пожаловать ' . $_SESSION['session_login'] . ' вы успешно авторизировались';
+	echo 'Hi ' . $_SESSION['session_login'] . ' login successfully';
 	echo '<br>';
-	echo 'Вы посещали эту страницу ' . $_COOKIE['page_visit'] . ' раз за последние 5 секунд';
+	echo 'You visit this page ' . $_COOKIE['page_visit'] . ' times on last five seconds';
 	echo '<br>';
-	echo '<a href = "logout.php"> Выход из аккаунта </a>';
+	echo '<a href = "logout.php"> Exit </a>';
 }else{
-	die('Нет доступа к странице');
+	die('Access denied');
 }
 
 

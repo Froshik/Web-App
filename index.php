@@ -7,7 +7,7 @@
 	<div class="container row text-center">
 	<div class="col">
 	<form name="regForm" class="regForm">
-			<h1>Регистрация</h1>
+			<h1>Registration</h1>
 		<div class="mb-3">
 			<label for="formGroupExampleInput" class="form-label" id="logLabel">Login</label>
 			<input type="text" class="form-control" id="inputLogin">
@@ -28,12 +28,12 @@
 			<label for="exampleInputPassword2" class="form-label" id="pass2Label">Confirm Password</label>
 			<input type="password" class="form-control" id="inputPassword2">
 		</div>
-			<button type="button" class="btn btn-primary" name="button-reg" id="button_registration">Регистрация</button>
+			<button type="button" class="btn btn-primary" name="button-reg" id="button_registration">Sing up</button>
 		</form>
 	</div>
 		<div class="col">
 		<form name = "authForm" class = "authForm">
-			<h1> Авторизация</h1>
+			<h1>Authorization</h1>
 			<div class="mb-3">
 			<label  class="form-label" id="authLoginLabel">Login</label>
 			<input type="text" class="form-control" id="authLogin" aria-describedby="emailHelp">
@@ -42,7 +42,7 @@
 			<label class="form-label" id="authPasswordLabel">Password</label>
 			<input type="password" class="form-control" id="authPassword">
 		</div>
-			<button type="button" class="btn btn-primary" id="button_login" >Войти</button>
+			<button type="button" class="btn btn-primary" id="button_login" >Sing in</button>
 		</form>
 	</div>
 	</div>
